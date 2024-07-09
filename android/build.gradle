@@ -1,0 +1,25 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    apply plugin: 'com.google.gms.google-services'
+
+}
+
+
+    // Use a more descriptive variable name for clarity
+    project.buildDir = "${rootProject.buildDir}/subproject-${project.name}"
+
+    // Instead of forcing evaluation order, declare explicit dependencies where needed.
+    // Overusing evaluationDependsOn can lead to hard-to-debug build issues.
+    // If a subproject truly needs something from ":app", add a dependency in that
+    // subproject's build.gradle file like:
+    // dependencies { implementation project(':app') }
+    // evaluationDependsOn(':app')
+
+
+// No changes needed for the "clean" task, it's already concise and effective
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
