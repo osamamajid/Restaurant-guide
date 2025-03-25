@@ -24,7 +24,33 @@ class _AdminPageState extends State<AdminPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF1E1E1E),
-      body: Row(
+      appBar: AppBar(
+        
+         backgroundColor: Colors.grey[900],
+        
+        actions: const [
+
+          
+           Row(
+             crossAxisAlignment: CrossAxisAlignment.center,
+             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            SizedBox(width: 16),
+            CircleAvatar(
+              radius: 20,
+              backgroundImage: NetworkImage('https://example.com/avatar.jpg'),
+            ),
+            SizedBox(width: 8),
+            Text(
+              'Hi, Admin',
+              style: TextStyle(color: Colors.white, fontSize: 18),
+            ),
+          ],
+        ),
+        ],
+         
+        ),
+          body: Row(
         children: [
           // Navigation Rail
           NavigationRail(

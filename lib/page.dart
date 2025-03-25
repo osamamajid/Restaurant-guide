@@ -239,9 +239,9 @@ class _PageMainState extends State<PageMain> {
                               child: SearchBar(
                                 controller: _searchController,
                                 backgroundColor:
-                                    MaterialStateProperty.all(Colors.grey[900]),
+                                    WidgetStateProperty.all(Colors.grey[900]),
                                 hintText: 'Search menu here...',
-                                hintStyle: MaterialStateProperty.all(
+                                hintStyle: WidgetStateProperty.all(
                                     TextStyle(color: Colors.grey[600])),
                                 leading:
                                     Icon(Icons.search, color: Colors.grey[600]),

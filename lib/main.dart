@@ -1,4 +1,4 @@
-git remote add origin https://github.com/osamamajid/Restaurant-guide.gitimport 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'login_page.dart';
 import 'package:provider/provider.dart';
 import 'services/data_service.dart';
@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => DataService(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Restaurant Guide',
         theme: ThemeData(
           // This is the theme of your application.

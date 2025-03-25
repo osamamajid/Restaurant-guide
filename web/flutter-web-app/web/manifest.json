@@ -1,0 +1,21 @@
+{
+  "name": "Flutter Web App",
+  "short_name": "FlutterApp",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#FF5722",
+  "background_color": "#FFFFFF",
+  "description": "A Flutter web application for restaurant guidance.",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
