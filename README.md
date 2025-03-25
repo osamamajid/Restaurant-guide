@@ -1,25 +1,80 @@
-# restaurant_guide_ui
+# Flutter Web Application
 
-A new Flutter project.
+This is a Flutter web application designed to serve as a restaurant guide. It utilizes state management and provides a user-friendly interface for navigating through various features.
 
-## Screenshots
+## Project Structure
 
-![Screenshot 1](Restaurant-guide/Screenshot%202025-03-25%20102142.jpg)
-![Screenshot 2](Restaurant-guide/Screenshot%202025-03-25%20102053.jpg)
-![Screenshot 3](Restaurant-guide/Screenshot%202025-03-25%20102022.jpg)
-![Screenshot 4](Restaurant-guide/Screenshot%202025-03-25%20102010.jpg)
-![Screenshot 5](Restaurant-guide/Screenshot%202025-03-25%20101942.jpg)
-![Screenshot 6](Restaurant-guide/Screenshot%202025-03-25%20101912.jpg)
+```
+flutter-web-app
+├── lib
+│   ├── main.dart             # Entry point of the application
+│   ├── pages
+│   │   └── home_page.dart    # Main content of the application
+│   └── services
+│       └── data_service.dart  # Handles data-related operations
+├── web
+│   ├── index.html            # Main HTML file for the web application
+│   ├── favicon.ico           # Favicon for the web application
+│   └── manifest.json         # Metadata for the web application
+├── pubspec.yaml              # Configuration file for the Flutter project
+└── README.md                 # Documentation for the project
+```
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this application locally, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/yourusername/flutter-web-app.git
+   cd flutter-web-app
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. **Install dependencies:**
+   ```
+   flutter pub get
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. **Run the application:**
+   ```
+   flutter run -d chrome
+   ```
+
+## Deployment
+
+To deploy the application on GitHub Pages, follow these steps:
+
+1. Build the web application:
+   ```
+   flutter build web
+   ```
+
+2. Navigate to the `build/web` directory:
+   ```
+   cd build/web
+   ```
+
+3. Initialize a new Git repository (if not already done):
+   ```
+   git init
+   ```
+
+4. Add the GitHub repository as a remote:
+   ```
+   git remote add origin https://github.com/yourusername/flutter-web-app.git
+   ```
+
+5. Commit the build files:
+   ```
+   git add .
+   git commit -m "Deploying Flutter web app"
+   ```
+
+6. Push to the `gh-pages` branch:
+   ```
+   git push -f origin master:gh-pages
+   ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
