@@ -2,6 +2,15 @@
 
 A new Flutter project.
 
+## Screenshots
+
+![Screenshot 1](images/Screenshot%202025-03-25%20102142.jpg)
+![Screenshot 2](images/Screenshot%202025-03-25%20102053.jpg)
+![Screenshot 3](images/Screenshot%202025-03-25%20102022.jpg)
+![Screenshot 4](images/Screenshot%202025-03-25%20102010.jpg)
+![Screenshot 5](images/Screenshot%202025-03-25%20101942.jpg)
+![Screenshot 6](images/Screenshot%202025-03-25%20101912.jpg)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
